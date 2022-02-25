@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Header {
+    padding: 2%;
+    background-color: #ccc;
+}
+
+.Box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2%;
+    background-color: #ccc;
+    margin: 1% 0;
+}
+
+.Box input {
+    border-radius: 05px;
+    height: 40px;
+    padding-left: 1%;
+
+}
+
+.Card {
+    margin: 2%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+}
+
+.MovieCard  {
+    margin: 1%;
+    display: flex;
+    border: 2px solid #000;
+}
+
+
+.ImgDiv img{
+    max-width: 250px;
+}
+
+.btnDiv {
+
+}
+
+.btnDiv button {
+    padding: 1%;
+    margin: 1%;
+    cursor: pointer;
+    font-weight: 900;
+    width: 98%;
+    position: relative;
+    top: 2px;
+}
+
