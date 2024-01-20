@@ -7,12 +7,12 @@ const App = ()=> {
   const [searchValue, setSearchValue] = useState("");
   const [favouriteMovie, setFavouriteMovie] = useState([]);
   const getMovies = (searchValue) => {
-    fetch("https://www.omdbapi.com/?s=" + searchValue + "&apikey=263d22d8")
+    fetch("https://api.themoviedb.org/3/search/movie?query=" + searchValue + "&include_adult=false&language=en-US&page=1&api_key=b43dded92e20f1716140754e423fb79d")
     .then((response) => response.json())
     .then((data) => {
-      console.log(data.Search)
-      if(data.Search) {
-        setMovies(data.Search);
+      console.log(data.results)
+      if(data.results) {
+        setMovies(data.results);
       }
     })
   }
