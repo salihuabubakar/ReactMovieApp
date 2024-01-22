@@ -8,7 +8,7 @@ const MovieList = (props) => {
                return (
                  <div className="MovieCard">
                    <div className="ImgDiv">
-                     <img key={index} src={movie.Poster} alt="movie" />;
+                     <img key={index} src={`https://image.tmdb.org/t/p/w185${movie.poster_path}`} alt="movie" />
                      <div className="btnDiv">
                        <button onClick={() => props.onAdd(movie)}>
                          {props.btnText}
